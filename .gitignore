@@ -30,3 +30,6 @@ main
 propagator/propagator
 
 .DS_Store
+docker-compose.yaml
+.stolos
+gin-bin

@@ -28,7 +28,7 @@ func getRedisConnection(address string, db int) *redis.Client {
 func main() {
 
 	iris.Get("/", func(c *iris.Context) {
-		redisClient := getRedisConnection("redishost", 6379)
+		redisClient := getRedisConnection("redishost:6379", 0)
 		redisClient.Set("hwKey", "<h1> Hello World! </h1>", 0)
 		hw, _ := redisClient.Get("hwKey").Result()
 		c.HTML(iris.StatusOK, hw)

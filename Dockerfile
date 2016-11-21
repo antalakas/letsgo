@@ -33,6 +33,7 @@ RUN go get github.com/fatih/structs
 RUN go get github.com/coreos/etcd/client
 RUN go get gopkg.in/redis.v4
 RUN go get gopkg.in/kataras/iris.v4
+RUN go get github.com/codegangsta/gin
 
 # --- prepare volume
 VOLUME ["/cengine"]
